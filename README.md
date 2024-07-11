@@ -1,0 +1,1 @@
+The goal of the project is to demonstrate polling data of the Canadian federal and provincial elections and give a prediction based on the polling data. This page contains a source code for the app for those interested.
