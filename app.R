@@ -11,6 +11,14 @@ for (v in vars) {
   assign(v, read.csv(file.path(data_path, paste0(v, ".csv"))))
 }
 
+dat_343 <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/dat_343.csv")
+dat_343_prov <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/dat_343_prov.csv")
+dat_343_prov_agg <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/dat_343_prov_agg.csv")
+results_chart <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/results_chart.csv")
+seats_proj <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/seats_proj.csv")
+prov_results <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/prov_results.csv")
+
+
 # App
 
 
