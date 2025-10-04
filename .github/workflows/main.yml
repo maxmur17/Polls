@@ -28,6 +28,7 @@ jobs:
             tidyverse
             rvest
             httr
+            readxl
 
       - name: Run scraping script
         run: Rscript data/csv_save.R
