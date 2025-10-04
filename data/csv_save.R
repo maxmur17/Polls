@@ -1,15 +1,7 @@
 library(tidyverse)
-library(shiny)
-library(plotly)
-library(shinyWidgets)
-
 library(rvest)
-library(lubridate)
-library(readxl)
 library(httr)
-library(curl)
-library(polite)
-
+library(readxl)
 
 
 links <- list("https://338canada.com/polls.htm","https://338canada.com/polls-atl.htm","https://338canada.com/polls-qc.htm","https://338canada.com/polls-on.htm",
@@ -1019,4 +1011,5 @@ for (v in vars) {
   # Use get() to access the variable by name
   write.csv(get(v), file = paste0(v, ".csv"), row.names = FALSE)
 }
+
 
