@@ -1,15 +1,29 @@
+# Packages
+
+library(tidyverse)
+library(shiny)
+library(plotly)
+library(shinyWidgets)
+
+library(rvest)
+library(lubridate)
+library(readxl)
+library(httr)
+library(curl)
+library(polite)
+
 # Data load
 
-data_path <- "D:\\Work\\Projects\\Fed Election Polls Shiny\\canada_polls_data\\data"
-
-# List of variable names
-vars <- c("dat_343", "results_chart", "seats_proj", 
-          "dat_343_prov_agg", "prov_results", "dat_343_prov")
-
-# Loop over variable names, read CSV, and assign to same variable name
-for (v in vars) {
-  assign(v, read.csv(file.path(data_path, paste0(v, ".csv"))))
-}
+# data_path <- "D:\\Work\\Projects\\Fed Election Polls Shiny\\canada_polls_data\\data"
+# 
+# # List of variable names
+# vars <- c("dat_343", "results_chart", "seats_proj", 
+#           "dat_343_prov_agg", "prov_results", "dat_343_prov")
+# 
+# # Loop over variable names, read CSV, and assign to same variable name
+# for (v in vars) {
+#   assign(v, read.csv(file.path(data_path, paste0(v, ".csv"))))
+# }
 
 dat_343 <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/dat_343.csv")
 dat_343_prov <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/dat_343_prov.csv")
@@ -17,6 +31,46 @@ dat_343_prov_agg <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/
 results_chart <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/results_chart.csv")
 seats_proj <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/seats_proj.csv")
 prov_results <- readr::read_csv("https://raw.githubusercontent.com/maxmur17/Polls/main/data/prov_results.csv")
+
+results_chart <- results_chart %>%
+  mutate(party_names = fct_relevel(party_names, c("LPC", "CPC",  "NDP","GPC", "BQ")))
+
+seats_proj <- seats_proj %>%
+  mutate(party = fct_relevel(party, c("LPC", "CPC",  "NDP","GPC", "BQ")))
+
+dat_343_long <- dat_343 %>%
+  pivot_longer(cols=LPC:BQ,
+               names_to = "party",
+               values_to = "pop_sup") %>%
+  mutate(party = fct_relevel(party, c("LPC", "CPC", "NDP", "BQ", "GPC")),
+         firm = as.factor(firm))
+
+winners <- prov_results %>%
+  group_by(region,district) %>%
+  slice(which.max(poll_result)) %>%
+  ungroup()
+
+
+winners2 <- winners %>%
+  group_by(region) %>%
+  count(party)
+
+colors_pal_app_fed <- c("LPC" = "red", "CPC" = "blue","NDP" = "orange", "BQ" = "turquoise4", "GPC" = "green3", "PPC" = "blueviolet")
+
+colors_pal_app <- c("ABP" = "turquoise1", "CPBC" = "steelblue4", "BCG" ="green3", "BCU" ="brown1", "BUF" ="blueviolet", "CAQ" ="aquamarine", "GPA" ="green3", "GPO" ="darkgreen",
+                    "LIB(AB)" ="red", "LIB(MB)" ="red","LIB(NB)" ="red","LIB(NL)" ="red","LIB(NS)" ="red","MBG" = "green3", "NBG" ="green3","NDP(AB)" = "orange","NDP(BC)" = "orange","NDP(MB)" ="orange","NDP(NB)" ="orange",
+                    "NDP(NL)" ="orange","NDP(NS)" ="orange","NDP(SK)" ="orange", "NLA" ="darkorchid4","NLG" = "green3", "NSG" ="green3", "OLP" ="red", "ONDP" ="orange", "PA" ="darkorchid4",
+                    "PC(MB)" ="blue","PC(NB)" ="blue","PC(NL)" ="blue","PC(NS)" ="blue","PC(SK)" ="blue","PCPO" ="blue", "PCQ" ="steelblue4", "PLQ" ="red", "PQ" ="blue", "QS" ="orange", "SKG" ="green3", "SKP" ="darkgreen",
+                    "SPP" = "red","SUP" = "turquoise1", "UCP" ="steelblue4", "PC(PEI)" = "blue", "GPPEI" = "green3", "LIB(PEI)" = "red", "NDP(PEI)" = "orange", "ISL" = "red4", "Other" = "grey")
+
+num_data_points <- 30
+alpha <- num_data_points / 150
+
+province <- c("AB","BC","MB","NB","NL","NS","ON","QC","SK","PEI")
+election_dates_vec <- c(as.Date("2023-05-29"), as.Date("2024-10-19"),as.Date("2023-10-03"), as.Date("2024-10-21"),as.Date("2021-03-25"),
+                        as.Date("2024-11-26"),as.Date("2022-06-02"),as.Date("2022-09-03"),as.Date("2024-10-28"),as.Date("2023-04-03"))
+line_positions <- setNames(election_dates_vec, province)
+
 
 
 # App
@@ -316,7 +370,7 @@ server <- function(input, output, session) {
       geom_col() +
       geom_text(size = 5, position = position_stack(vjust = 0.5)) +  
       coord_flip() +
-      scale_fill_manual(values=c("blue", "red", "orange", "turquoise4", "green3", "blueviolet")) + 
+      scale_fill_manual(values=c("red","blue", "orange","green3", "turquoise4")) + 
       theme_classic() +
       theme(legend.position = "none", axis.title.y = element_blank(), axis.title.x = element_blank())
   )
@@ -325,7 +379,7 @@ server <- function(input, output, session) {
       geom_col() +
       geom_text(size = 5, position = position_stack(vjust = 0.5)) + 
       coord_flip() +
-      scale_fill_manual(values=c("blue", "red", "orange", "turquoise4", "green3", "blueviolet")) + 
+      scale_fill_manual(values=c("red","blue", "orange","green3", "turquoise4")) + 
       theme_classic() +
       theme(legend.position = "none", axis.title.y = element_blank(), axis.title.x = element_blank())
   )
