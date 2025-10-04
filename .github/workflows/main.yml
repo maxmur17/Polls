@@ -30,7 +30,7 @@ jobs:
             httr
 
       - name: Run scraping script
-        run: Rscript csv_save.R
+        run: Rscript data/csv_save.R
 
       - name: Commit updated CSVs
         run: |
