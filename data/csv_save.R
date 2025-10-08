@@ -1,8 +1,19 @@
+# library(tidyverse)
+# library(shiny)
+# library(plotly)
+# library(shinyWidgets)
+# 
+# library(rvest)
+# library(lubridate)
+# library(readxl)
+# library(httr)
+# library(curl)
+# library(polite)
+
 library(tidyverse)
 library(rvest)
 library(httr)
 library(readxl)
-
 
 links <- list("https://338canada.com/polls.htm","https://338canada.com/polls-atl.htm","https://338canada.com/polls-qc.htm","https://338canada.com/polls-on.htm",
               "https://338canada.com/polls-pr.htm", "https://338canada.com/polls-ab.htm", "https://338canada.com/polls-bc.htm")
@@ -123,14 +134,19 @@ alpha <- num_data_points / 150
 
 # Provincial all elections
 
+
 links_prov <- c("https://338canada.com/alberta/polls.htm","https://338canada.com/bc/polls.htm","https://338canada.com/manitoba/polls.htm",
-                "https://338canada.com/nb/polls.htm", "https://338canada.com/nl/polls.htm", "https://338canada.com/ns/polls.htm",
+                "https://338canada.com/nb/polls.htm", "https://338canada.com/nl/", "https://338canada.com/ns/polls.htm",
                 "https://338canada.com/ontario/polls.htm", "https://338canada.com/quebec/polls.htm", "https://338canada.com/saskatchewan/polls.htm")
 
 C338_pages_prov <- list()
 
+# for (i in seq_along(links_prov)) {
+#   C338_pages_prov[[i]] <- fetch_html(links_prov[[i]])
+# }
+
 for (i in seq_along(links_prov)) {
-  C338_pages_prov[[i]] <- read_html(links_prov[[i]])
+  C338_pages_prov[[i]] <- read_html(links_prov[[i]], user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0")
   
 }
 
@@ -148,9 +164,11 @@ for (i in 1:9) {
   dat_343_prov[[i]] <- dat_343_list_prov[[i]][[1]]
 }
 
+dat_343_prov[[2]] <- dat_343_prov[[2]][-10,]
+
 pattern <- "(?i)n\\s*=\\s*([0-9,]+)"
 
-for (i in 7:8) {
+for (i in c(2,7:8)) {
   sample_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]") %>%  # adjust XPath if needed
     html_text(trim = TRUE)
@@ -165,7 +183,9 @@ for (i in 7:8) {
   dat_343_prov[[i]]$sample <- sample_n
 }
 
-for (i in 7:8) {
+
+
+for (i in c(2,7:8)) {
   # extract the first text node (dates)
   date_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]/text()[1]") %>%
@@ -177,7 +197,7 @@ for (i in 7:8) {
   dat_343_prov[[i]]$date <- poll_dates
 }
 
-for (i in 7:8) {
+for (i in c(2,7:8)) {
   # polling firm is in div/div[1]
   firm_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[1]") %>%
@@ -188,7 +208,11 @@ for (i in 7:8) {
 
 ON_parties <- c("PCPO","ONDP","OLP","GPO")
 QC_parties <- c("CAQ","PLQ","QS","PQ","PCQ")
+BC_parties <- c("NDP(BC)", "CPBC", "BCG")
 
+
+blank_idx <- which(colnames(dat_343_prov[[2]]) == "")
+colnames(dat_343_prov[[2]])[blank_idx] <- BC_parties[seq_along(blank_idx)]
 
 blank_idx <- which(colnames(dat_343_prov[[7]]) == "")
 colnames(dat_343_prov[[7]])[blank_idx] <- ON_parties[seq_along(blank_idx)]
@@ -202,15 +226,19 @@ for (i in 1:9) {
     mutate(row = row_number())
 }
 
+
+
 province <- c("AB","BC","MB","NB","NL","NS","ON","QC","SK","PEI")
 election_dates_vec <- c(as.Date("2023-05-29"), as.Date("2024-10-19"),as.Date("2023-10-03"), as.Date("2024-10-21"),as.Date("2021-03-25"),
                         as.Date("2024-11-26"),as.Date("2022-06-02"),as.Date("2022-09-03"),as.Date("2024-10-28"),as.Date("2023-04-03"))
 
-for (i in c(1:6,9)) {
+for (i in c(1,3:6,9)) {
   dat_343_prov[[i]] <- dat_343_prov[[i]] %>%
     rename(firm = Firm, date = `Date(middle)`, sample = Sample)
 }
 
+dat_343_prov[[2]] <- dat_343_prov[[2]] %>%
+  select(c(-`British Columbia polls`, -CNBC, -ONE))
 
 dat_343_prov[[7]] <- dat_343_prov[[7]] %>%
   select(-`Ontario polls`)
@@ -296,7 +324,6 @@ dat_343_prov_wide <- dat_343_prov %>%
   pivot_wider(names_from = party, values_from = pop_sup)
 
 # Prediction model data
-
 
 el_results <- read.csv("table_tableau12.csv")
 el_results_cols <- c("province","district","district_number","candidate","candidate_residence","candidate_occupation","votes","votes_pct","majority","majority_pct")
@@ -1012,4 +1039,31 @@ for (v in vars) {
   write.csv(get(v), file = paste0(v, ".csv"), row.names = FALSE)
 }
 
+
+# url <- "https://338canada.com/alberta/polls.htm"
+# 
+# fetch_html <- function(url) {
+#   message("Fetching: ", url)
+#   res <- try(
+#     GET(url, user_agent("Mozilla/5.0 (compatible; R script; +https://github.com/maxmur17/Polls)")),
+#     silent = TRUE
+#   )
+#   
+#   if (inherits(res, "try-error")) {
+#     stop("Request failed: ", conditionMessage(attr(res, "condition")))
+#   }
+#   
+#   if (http_error(res)) {
+#     stop("HTTP error: ", status_code(res))
+#   }
+#   
+#   read_html(res)
+# }
+# 
+# base_url <- "https://338canada.com/alberta/polls.htm"
+# page <-  fetch_html(base_url)
+# 
+# ab_polls <- page %>% 
+# html_elements(css = "#myTable") %>%
+#   html_table()
 
