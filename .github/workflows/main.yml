@@ -31,7 +31,9 @@ jobs:
             readxl
 
       - name: Run scraping script
-        run: Rscript data/csv_save.R
+        run: |
+        cd data
+        Rscript data/csv_save.R
 
       - name: Commit updated CSVs
         run: |
