@@ -1,4 +1,19 @@
 "Leader","sample","date","firm","region","party","pop_sup"
+"LPC +6",1562,2025-10-04,"Léger","National","LPC",44
+"LPC +6",1562,2025-10-04,"Léger","National","CPC",38
+"LPC +6",1562,2025-10-04,"Léger","National","NDP",6
+"LPC +6",1562,2025-10-04,"Léger","National","GPC",3
+"LPC +6",1562,2025-10-04,"Léger","National","BQ",7
+"LPC +1",1027,2025-10-03,"Nanos Research","National","LPC",39
+"LPC +1",1027,2025-10-03,"Nanos Research","National","CPC",38
+"LPC +1",1027,2025-10-03,"Nanos Research","National","NDP",12
+"LPC +1",1027,2025-10-03,"Nanos Research","National","GPC",4
+"LPC +1",1027,2025-10-03,"Nanos Research","National","BQ",6
+"CPC +1",1504,2025-09-29,"Abacus Data","National","LPC",40
+"CPC +1",1504,2025-09-29,"Abacus Data","National","CPC",41
+"CPC +1",1504,2025-09-29,"Abacus Data","National","NDP",7
+"CPC +1",1504,2025-09-29,"Abacus Data","National","GPC",3
+"CPC +1",1504,2025-09-29,"Abacus Data","National","BQ",7
 "LPC +4",1030,2025-09-26,"Nanos Research","National","LPC",41
 "LPC +4",1030,2025-09-26,"Nanos Research","National","CPC",37
 "LPC +4",1030,2025-09-26,"Nanos Research","National","NDP",12
@@ -264,6 +279,16 @@
 "LPC +2.5",19641663,2025-04-28,"General election","National","NDP",6.3
 "LPC +2.5",19641663,2025-04-28,"General election","National","GPC",1.2
 "LPC +2.5",19641663,2025-04-28,"General election","National","BQ",6.3
+"LPC +16",1562,2025-10-04,"Léger","ATL","LPC",49
+"LPC +16",1562,2025-10-04,"Léger","ATL","CPC",33
+"LPC +16",1562,2025-10-04,"Léger","ATL","NDP",9
+"LPC +16",1562,2025-10-04,"Léger","ATL","GPC",7
+"LPC +16",1562,2025-10-04,"Léger","ATL","BQ",NA
+"LPC +6",1504,2025-09-29,"Abacus Data","ATL","LPC",47
+"LPC +6",1504,2025-09-29,"Abacus Data","ATL","CPC",41
+"LPC +6",1504,2025-09-29,"Abacus Data","ATL","NDP",6
+"LPC +6",1504,2025-09-29,"Abacus Data","ATL","GPC",2
+"LPC +6",1504,2025-09-29,"Abacus Data","ATL","BQ",NA
 "LPC +17",1570,2025-09-21,"Angus Reid Institute","ATL","LPC",53
 "LPC +17",1570,2025-09-21,"Angus Reid Institute","ATL","CPC",36
 "LPC +17",1570,2025-09-21,"Angus Reid Institute","ATL","NDP",9
@@ -404,6 +429,16 @@
 "LPC +17",1502,2025-04-30,"Léger","ATL","NDP",4
 "LPC +17",1502,2025-04-30,"Léger","ATL","GPC",1
 "LPC +17",1502,2025-04-30,"Léger","ATL","BQ",NA
+"LPC +6",1562,2025-10-04,"Léger","QC","LPC",38
+"LPC +6",1562,2025-10-04,"Léger","QC","CPC",23
+"LPC +6",1562,2025-10-04,"Léger","QC","NDP",2
+"LPC +6",1562,2025-10-04,"Léger","QC","GPC",NA
+"LPC +6",1562,2025-10-04,"Léger","QC","BQ",32
+"LPC +7",1504,2025-09-29,"Abacus Data","QC","LPC",37
+"LPC +7",1504,2025-09-29,"Abacus Data","QC","CPC",26
+"LPC +7",1504,2025-09-29,"Abacus Data","QC","NDP",1
+"LPC +7",1504,2025-09-29,"Abacus Data","QC","GPC",NA
+"LPC +7",1504,2025-09-29,"Abacus Data","QC","BQ",30
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","QC","LPC",35
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","QC","CPC",24
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","QC","NDP",5
@@ -559,6 +594,16 @@
 "LPC +15",1502,2025-04-30,"Léger","QC","NDP",5
 "LPC +15",1502,2025-04-30,"Léger","QC","GPC",NA
 "LPC +15",1502,2025-04-30,"Léger","QC","BQ",28
+"LPC +9",1562,2025-10-04,"Léger","ON","LPC",48
+"LPC +9",1562,2025-10-04,"Léger","ON","CPC",39
+"LPC +9",1562,2025-10-04,"Léger","ON","NDP",9
+"LPC +9",1562,2025-10-04,"Léger","ON","GPC",3
+"LPC +9",1562,2025-10-04,"Léger","ON","BQ",NA
+"LPC +3",1504,2025-09-29,"Abacus Data","ON","LPC",45
+"LPC +3",1504,2025-09-29,"Abacus Data","ON","CPC",42
+"LPC +3",1504,2025-09-29,"Abacus Data","ON","NDP",7
+"LPC +3",1504,2025-09-29,"Abacus Data","ON","GPC",3
+"LPC +3",1504,2025-09-29,"Abacus Data","ON","BQ",NA
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","ON","LPC",44
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","ON","CPC",42
 "LPC +2",1570,2025-09-21,"Angus Reid Institute","ON","NDP",10
@@ -709,6 +754,16 @@
 "LPC +5",1502,2025-04-30,"Léger","ON","NDP",5
 "LPC +5",1502,2025-04-30,"Léger","ON","GPC",1
 "LPC +5",1502,2025-04-30,"Léger","ON","BQ",NA
+"CPC +23",1562,2025-10-04,"Léger","MB/SK","LPC",33
+"CPC +23",1562,2025-10-04,"Léger","MB/SK","CPC",56
+"CPC +23",1562,2025-10-04,"Léger","MB/SK","NDP",7
+"CPC +23",1562,2025-10-04,"Léger","MB/SK","GPC",2
+"CPC +23",1562,2025-10-04,"Léger","MB/SK","BQ",NA
+"CPC +21",1504,2025-09-29,"Abacus Data","MB/SK","LPC",32
+"CPC +21",1504,2025-09-29,"Abacus Data","MB/SK","CPC",53
+"CPC +21",1504,2025-09-29,"Abacus Data","MB/SK","NDP",7
+"CPC +21",1504,2025-09-29,"Abacus Data","MB/SK","GPC",7
+"CPC +21",1504,2025-09-29,"Abacus Data","MB/SK","BQ",NA
 "CPC +29",1570,2025-09-21,"Angus Reid Institute","MB/SK","LPC",28
 "CPC +29",1570,2025-09-21,"Angus Reid Institute","MB/SK","CPC",57
 "CPC +29",1570,2025-09-21,"Angus Reid Institute","MB/SK","NDP",14
@@ -849,6 +904,11 @@
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","NDP",10
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","GPC",0
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","BQ",NA
+"CPC +32",1504,2025-09-29,"Abacus Data","AB","LPC",25
+"CPC +32",1504,2025-09-29,"Abacus Data","AB","CPC",57
+"CPC +32",1504,2025-09-29,"Abacus Data","AB","NDP",11
+"CPC +32",1504,2025-09-29,"Abacus Data","AB","GPC",1
+"CPC +32",1504,2025-09-29,"Abacus Data","AB","BQ",NA
 "CPC +44",1570,2025-09-21,"Angus Reid Institute","AB","LPC",21
 "CPC +44",1570,2025-09-21,"Angus Reid Institute","AB","CPC",65
 "CPC +44",1570,2025-09-21,"Angus Reid Institute","AB","NDP",11
@@ -989,6 +1049,16 @@
 "CPC +36",1502,2025-04-30,"Léger","AB","NDP",6
 "CPC +36",1502,2025-04-30,"Léger","AB","GPC",2
 "CPC +36",1502,2025-04-30,"Léger","AB","BQ",NA
+"LPC +25",1562,2025-10-04,"Léger","BC","LPC",56
+"LPC +25",1562,2025-10-04,"Léger","BC","CPC",31
+"LPC +25",1562,2025-10-04,"Léger","BC","NDP",8
+"LPC +25",1562,2025-10-04,"Léger","BC","GPC",4
+"LPC +25",1562,2025-10-04,"Léger","BC","BQ",NA
+"Tie",1504,2025-09-29,"Abacus Data","BC","LPC",41
+"Tie",1504,2025-09-29,"Abacus Data","BC","CPC",41
+"Tie",1504,2025-09-29,"Abacus Data","BC","NDP",15
+"Tie",1504,2025-09-29,"Abacus Data","BC","GPC",2
+"Tie",1504,2025-09-29,"Abacus Data","BC","BQ",NA
 "CPC +6",1570,2025-09-21,"Angus Reid Institute","BC","LPC",36
 "CPC +6",1570,2025-09-21,"Angus Reid Institute","BC","CPC",42
 "CPC +6",1570,2025-09-21,"Angus Reid Institute","BC","NDP",16
