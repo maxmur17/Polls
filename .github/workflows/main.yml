@@ -32,8 +32,8 @@ jobs:
 
       - name: Run scraping script
         run: |
-        cd data
-        Rscript data/csv_save.R
+            cd data
+            Rscript csv_save.R
 
       - name: Commit updated CSVs
         run: |
