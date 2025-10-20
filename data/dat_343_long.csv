@@ -1,4 +1,9 @@
 "Leader","sample","date","firm","region","party","pop_sup"
+"LPC +2",1002,2025-10-10,"Nanos Research","National","LPC",39
+"LPC +2",1002,2025-10-10,"Nanos Research","National","CPC",37
+"LPC +2",1002,2025-10-10,"Nanos Research","National","NDP",12
+"LPC +2",1002,2025-10-10,"Nanos Research","National","GPC",4
+"LPC +2",1002,2025-10-10,"Nanos Research","National","BQ",7
 "LPC +6",1562,2025-10-04,"Léger","National","LPC",44
 "LPC +6",1562,2025-10-04,"Léger","National","CPC",38
 "LPC +6",1562,2025-10-04,"Léger","National","NDP",6
