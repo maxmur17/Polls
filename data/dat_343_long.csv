@@ -1,4 +1,14 @@
 "Leader","sample","date","firm","region","party","pop_sup"
+"LPC +2",1021,2025-10-17,"Nanos Research","National","LPC",39
+"LPC +2",1021,2025-10-17,"Nanos Research","National","CPC",37
+"LPC +2",1021,2025-10-17,"Nanos Research","National","NDP",12
+"LPC +2",1021,2025-10-17,"Nanos Research","National","GPC",3
+"LPC +2",1021,2025-10-17,"Nanos Research","National","BQ",7
+"CPC +1",4501,2025-10-12,"Abacus Data","National","LPC",40
+"CPC +1",4501,2025-10-12,"Abacus Data","National","CPC",41
+"CPC +1",4501,2025-10-12,"Abacus Data","National","NDP",8
+"CPC +1",4501,2025-10-12,"Abacus Data","National","GPC",3
+"CPC +1",4501,2025-10-12,"Abacus Data","National","BQ",7
 "LPC +2",1002,2025-10-10,"Nanos Research","National","LPC",39
 "LPC +2",1002,2025-10-10,"Nanos Research","National","CPC",37
 "LPC +2",1002,2025-10-10,"Nanos Research","National","NDP",12
@@ -284,6 +294,11 @@
 "LPC +2.5",19641663,2025-04-28,"General election","National","NDP",6.3
 "LPC +2.5",19641663,2025-04-28,"General election","National","GPC",1.2
 "LPC +2.5",19641663,2025-04-28,"General election","National","BQ",6.3
+"LPC +16",4501,2025-10-12,"Abacus Data","ATL","LPC",54
+"LPC +16",4501,2025-10-12,"Abacus Data","ATL","CPC",38
+"LPC +16",4501,2025-10-12,"Abacus Data","ATL","NDP",5
+"LPC +16",4501,2025-10-12,"Abacus Data","ATL","GPC",3
+"LPC +16",4501,2025-10-12,"Abacus Data","ATL","BQ",NA
 "LPC +16",1562,2025-10-04,"Léger","ATL","LPC",49
 "LPC +16",1562,2025-10-04,"Léger","ATL","CPC",33
 "LPC +16",1562,2025-10-04,"Léger","ATL","NDP",9
@@ -434,6 +449,11 @@
 "LPC +17",1502,2025-04-30,"Léger","ATL","NDP",4
 "LPC +17",1502,2025-04-30,"Léger","ATL","GPC",1
 "LPC +17",1502,2025-04-30,"Léger","ATL","BQ",NA
+"LPC +3",4501,2025-10-12,"Abacus Data","QC","LPC",36
+"LPC +3",4501,2025-10-12,"Abacus Data","QC","CPC",23
+"LPC +3",4501,2025-10-12,"Abacus Data","QC","NDP",4
+"LPC +3",4501,2025-10-12,"Abacus Data","QC","GPC",NA
+"LPC +3",4501,2025-10-12,"Abacus Data","QC","BQ",33
 "LPC +6",1562,2025-10-04,"Léger","QC","LPC",38
 "LPC +6",1562,2025-10-04,"Léger","QC","CPC",23
 "LPC +6",1562,2025-10-04,"Léger","QC","NDP",2
@@ -599,6 +619,11 @@
 "LPC +15",1502,2025-04-30,"Léger","QC","NDP",5
 "LPC +15",1502,2025-04-30,"Léger","QC","GPC",NA
 "LPC +15",1502,2025-04-30,"Léger","QC","BQ",28
+"LPC +1",4501,2025-10-12,"Abacus Data","ON","LPC",44
+"LPC +1",4501,2025-10-12,"Abacus Data","ON","CPC",43
+"LPC +1",4501,2025-10-12,"Abacus Data","ON","NDP",8
+"LPC +1",4501,2025-10-12,"Abacus Data","ON","GPC",3
+"LPC +1",4501,2025-10-12,"Abacus Data","ON","BQ",NA
 "LPC +9",1562,2025-10-04,"Léger","ON","LPC",48
 "LPC +9",1562,2025-10-04,"Léger","ON","CPC",39
 "LPC +9",1562,2025-10-04,"Léger","ON","NDP",9
@@ -759,6 +784,11 @@
 "LPC +5",1502,2025-04-30,"Léger","ON","NDP",5
 "LPC +5",1502,2025-04-30,"Léger","ON","GPC",1
 "LPC +5",1502,2025-04-30,"Léger","ON","BQ",NA
+"CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","LPC",34
+"CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","CPC",51
+"CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","NDP",12
+"CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","GPC",1
+"CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","BQ",NA
 "CPC +23",1562,2025-10-04,"Léger","MB/SK","LPC",33
 "CPC +23",1562,2025-10-04,"Léger","MB/SK","CPC",56
 "CPC +23",1562,2025-10-04,"Léger","MB/SK","NDP",7
@@ -909,6 +939,11 @@
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","NDP",10
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","GPC",0
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","BQ",NA
+"CPC +34",4501,2025-10-12,"Abacus Data","AB","LPC",27
+"CPC +34",4501,2025-10-12,"Abacus Data","AB","CPC",61
+"CPC +34",4501,2025-10-12,"Abacus Data","AB","NDP",9
+"CPC +34",4501,2025-10-12,"Abacus Data","AB","GPC",1
+"CPC +34",4501,2025-10-12,"Abacus Data","AB","BQ",NA
 "CPC +32",1562,2025-10-04,"Léger","AB","LPC",31
 "CPC +32",1562,2025-10-04,"Léger","AB","CPC",63
 "CPC +32",1562,2025-10-04,"Léger","AB","NDP",4
@@ -1059,6 +1094,11 @@
 "CPC +36",1502,2025-04-30,"Léger","AB","NDP",6
 "CPC +36",1502,2025-04-30,"Léger","AB","GPC",2
 "CPC +36",1502,2025-04-30,"Léger","AB","BQ",NA
+"CPC +2",4501,2025-10-12,"Abacus Data","BC","LPC",40
+"CPC +2",4501,2025-10-12,"Abacus Data","BC","CPC",42
+"CPC +2",4501,2025-10-12,"Abacus Data","BC","NDP",12
+"CPC +2",4501,2025-10-12,"Abacus Data","BC","GPC",5
+"CPC +2",4501,2025-10-12,"Abacus Data","BC","BQ",NA
 "LPC +25",1562,2025-10-04,"Léger","BC","LPC",56
 "LPC +25",1562,2025-10-04,"Léger","BC","CPC",31
 "LPC +25",1562,2025-10-04,"Léger","BC","NDP",8
