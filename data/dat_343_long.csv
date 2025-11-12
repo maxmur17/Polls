@@ -1,9 +1,69 @@
 "Leader","sample","date","firm","region","party","pop_sup"
+"LPC +3",1122,2025-11-07,"Nanos Research","National","LPC",40
+"LPC +3",1122,2025-11-07,"Nanos Research","National","CPC",37
+"LPC +3",1122,2025-11-07,"Nanos Research","National","NDP",11
+"LPC +3",1122,2025-11-07,"Nanos Research","National","GPC",2
+"LPC +3",1122,2025-11-07,"Nanos Research","National","BQ",8
+"LPC +8",1000,2025-11-08,"Liaison Strategies","National","LPC",44
+"LPC +8",1000,2025-11-08,"Liaison Strategies","National","CPC",36
+"LPC +8",1000,2025-11-08,"Liaison Strategies","National","NDP",10
+"LPC +8",1000,2025-11-08,"Liaison Strategies","National","GPC",2
+"LPC +8",1000,2025-11-08,"Liaison Strategies","National","BQ",6
+"CPC +1",1916,2025-11-06,"Abacus Data","National","LPC",40
+"CPC +1",1916,2025-11-06,"Abacus Data","National","CPC",41
+"CPC +1",1916,2025-11-06,"Abacus Data","National","NDP",8
+"CPC +1",1916,2025-11-06,"Abacus Data","National","GPC",2
+"CPC +1",1916,2025-11-06,"Abacus Data","National","BQ",7
+"LPC +4",1000,2025-11-02,"Liaison Strategies","National","LPC",42
+"LPC +4",1000,2025-11-02,"Liaison Strategies","National","CPC",38
+"LPC +4",1000,2025-11-02,"Liaison Strategies","National","NDP",11
+"LPC +4",1000,2025-11-02,"Liaison Strategies","National","GPC",2
+"LPC +4",1000,2025-11-02,"Liaison Strategies","National","BQ",5
+"LPC +7",1126,2025-11-02,"EKOS","National","LPC",43
+"LPC +7",1126,2025-11-02,"EKOS","National","CPC",36
+"LPC +7",1126,2025-11-02,"EKOS","National","NDP",8
+"LPC +7",1126,2025-11-02,"EKOS","National","GPC",4
+"LPC +7",1126,2025-11-02,"EKOS","National","BQ",6
+"LPC +5",1585,2025-11-01,"Léger","National","LPC",43
+"LPC +5",1585,2025-11-01,"Léger","National","CPC",38
+"LPC +5",1585,2025-11-01,"Léger","National","NDP",7
+"LPC +5",1585,2025-11-01,"Léger","National","GPC",4
+"LPC +5",1585,2025-11-01,"Léger","National","BQ",7
+"LPC +2",1060,2025-10-31,"Nanos Research","National","LPC",39
+"LPC +2",1060,2025-10-31,"Nanos Research","National","CPC",37
+"LPC +2",1060,2025-10-31,"Nanos Research","National","NDP",13
+"LPC +2",1060,2025-10-31,"Nanos Research","National","GPC",2
+"LPC +2",1060,2025-10-31,"Nanos Research","National","BQ",7
+"CPC +2",2922,2025-10-27,"Abacus Data","National","LPC",40
+"CPC +2",2922,2025-10-27,"Abacus Data","National","CPC",42
+"CPC +2",2922,2025-10-27,"Abacus Data","National","NDP",8
+"CPC +2",2922,2025-10-27,"Abacus Data","National","GPC",3
+"CPC +2",2922,2025-10-27,"Abacus Data","National","BQ",6
+"LPC +2",1060,2025-10-24,"Nanos Research","National","LPC",39
+"LPC +2",1060,2025-10-24,"Nanos Research","National","CPC",37
+"LPC +2",1060,2025-10-24,"Nanos Research","National","NDP",13
+"LPC +2",1060,2025-10-24,"Nanos Research","National","GPC",2
+"LPC +2",1060,2025-10-24,"Nanos Research","National","BQ",7
+"LPC +12",1199,2025-10-23,"EKOS","National","LPC",44
+"LPC +12",1199,2025-10-23,"EKOS","National","CPC",32
+"LPC +12",1199,2025-10-23,"EKOS","National","NDP",12
+"LPC +12",1199,2025-10-23,"EKOS","National","GPC",3
+"LPC +12",1199,2025-10-23,"EKOS","National","BQ",6
 "LPC +2",1021,2025-10-17,"Nanos Research","National","LPC",39
 "LPC +2",1021,2025-10-17,"Nanos Research","National","CPC",37
 "LPC +2",1021,2025-10-17,"Nanos Research","National","NDP",12
 "LPC +2",1021,2025-10-17,"Nanos Research","National","GPC",3
 "LPC +2",1021,2025-10-17,"Nanos Research","National","BQ",7
+"LPC +1",4106,2025-10-17,"Innovative Research","National","LPC",40
+"LPC +1",4106,2025-10-17,"Innovative Research","National","CPC",39
+"LPC +1",4106,2025-10-17,"Innovative Research","National","NDP",9
+"LPC +1",4106,2025-10-17,"Innovative Research","National","GPC",3
+"LPC +1",4106,2025-10-17,"Innovative Research","National","BQ",7
+"LPC +4",1206,2025-10-14,"Pallas Data","National","LPC",41
+"LPC +4",1206,2025-10-14,"Pallas Data","National","CPC",37
+"LPC +4",1206,2025-10-14,"Pallas Data","National","NDP",11
+"LPC +4",1206,2025-10-14,"Pallas Data","National","GPC",3
+"LPC +4",1206,2025-10-14,"Pallas Data","National","BQ",6
 "CPC +1",4501,2025-10-12,"Abacus Data","National","LPC",40
 "CPC +1",4501,2025-10-12,"Abacus Data","National","CPC",41
 "CPC +1",4501,2025-10-12,"Abacus Data","National","NDP",8
@@ -294,6 +354,51 @@
 "LPC +2.5",19641663,2025-04-28,"General election","National","NDP",6.3
 "LPC +2.5",19641663,2025-04-28,"General election","National","GPC",1.2
 "LPC +2.5",19641663,2025-04-28,"General election","National","BQ",6.3
+"LPC +23",1000,2025-11-08,"Liaison Strategies","ATL","LPC",54
+"LPC +23",1000,2025-11-08,"Liaison Strategies","ATL","CPC",31
+"LPC +23",1000,2025-11-08,"Liaison Strategies","ATL","NDP",11
+"LPC +23",1000,2025-11-08,"Liaison Strategies","ATL","GPC",2
+"LPC +23",1000,2025-11-08,"Liaison Strategies","ATL","BQ",NA
+"LPC +8",1916,2025-11-06,"Abacus Data","ATL","LPC",48
+"LPC +8",1916,2025-11-06,"Abacus Data","ATL","CPC",40
+"LPC +8",1916,2025-11-06,"Abacus Data","ATL","NDP",8
+"LPC +8",1916,2025-11-06,"Abacus Data","ATL","GPC",1
+"LPC +8",1916,2025-11-06,"Abacus Data","ATL","BQ",NA
+"LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","LPC",53
+"LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","CPC",31
+"LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","NDP",10
+"LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","GPC",2
+"LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","BQ",NA
+"LPC +6",1126,2025-11-02,"EKOS","ATL","LPC",49
+"LPC +6",1126,2025-11-02,"EKOS","ATL","CPC",43
+"LPC +6",1126,2025-11-02,"EKOS","ATL","NDP",7
+"LPC +6",1126,2025-11-02,"EKOS","ATL","GPC",2
+"LPC +6",1126,2025-11-02,"EKOS","ATL","BQ",NA
+"LPC +12",1585,2025-11-01,"Léger","ATL","LPC",46
+"LPC +12",1585,2025-11-01,"Léger","ATL","CPC",34
+"LPC +12",1585,2025-11-01,"Léger","ATL","NDP",3
+"LPC +12",1585,2025-11-01,"Léger","ATL","GPC",15
+"LPC +12",1585,2025-11-01,"Léger","ATL","BQ",NA
+"LPC +5",2922,2025-10-27,"Abacus Data","ATL","LPC",45
+"LPC +5",2922,2025-10-27,"Abacus Data","ATL","CPC",40
+"LPC +5",2922,2025-10-27,"Abacus Data","ATL","NDP",11
+"LPC +5",2922,2025-10-27,"Abacus Data","ATL","GPC",3
+"LPC +5",2922,2025-10-27,"Abacus Data","ATL","BQ",NA
+"LPC +42",1199,2025-10-23,"EKOS","ATL","LPC",61
+"LPC +42",1199,2025-10-23,"EKOS","ATL","CPC",19
+"LPC +42",1199,2025-10-23,"EKOS","ATL","NDP",14
+"LPC +42",1199,2025-10-23,"EKOS","ATL","GPC",4
+"LPC +42",1199,2025-10-23,"EKOS","ATL","BQ",NA
+"LPC +17",4106,2025-10-17,"Innovative Research","ATL","LPC",53
+"LPC +17",4106,2025-10-17,"Innovative Research","ATL","CPC",36
+"LPC +17",4106,2025-10-17,"Innovative Research","ATL","NDP",8
+"LPC +17",4106,2025-10-17,"Innovative Research","ATL","GPC",1
+"LPC +17",4106,2025-10-17,"Innovative Research","ATL","BQ",NA
+"LPC +26",1206,2025-10-14,"Pallas Data","ATL","LPC",56
+"LPC +26",1206,2025-10-14,"Pallas Data","ATL","CPC",30
+"LPC +26",1206,2025-10-14,"Pallas Data","ATL","NDP",9
+"LPC +26",1206,2025-10-14,"Pallas Data","ATL","GPC",5
+"LPC +26",1206,2025-10-14,"Pallas Data","ATL","BQ",NA
 "LPC +16",4501,2025-10-12,"Abacus Data","ATL","LPC",54
 "LPC +16",4501,2025-10-12,"Abacus Data","ATL","CPC",38
 "LPC +16",4501,2025-10-12,"Abacus Data","ATL","NDP",5
@@ -449,6 +554,51 @@
 "LPC +17",1502,2025-04-30,"Léger","ATL","NDP",4
 "LPC +17",1502,2025-04-30,"Léger","ATL","GPC",1
 "LPC +17",1502,2025-04-30,"Léger","ATL","BQ",NA
+"LPC +17",1000,2025-11-08,"Liaison Strategies","QC","LPC",42
+"LPC +17",1000,2025-11-08,"Liaison Strategies","QC","CPC",25
+"LPC +17",1000,2025-11-08,"Liaison Strategies","QC","NDP",8
+"LPC +17",1000,2025-11-08,"Liaison Strategies","QC","GPC",NA
+"LPC +17",1000,2025-11-08,"Liaison Strategies","QC","BQ",24
+"LPC +9",1916,2025-11-06,"Abacus Data","QC","LPC",39
+"LPC +9",1916,2025-11-06,"Abacus Data","QC","CPC",24
+"LPC +9",1916,2025-11-06,"Abacus Data","QC","NDP",5
+"LPC +9",1916,2025-11-06,"Abacus Data","QC","GPC",NA
+"LPC +9",1916,2025-11-06,"Abacus Data","QC","BQ",30
+"LPC +20",1000,2025-11-02,"Liaison Strategies","QC","LPC",44
+"LPC +20",1000,2025-11-02,"Liaison Strategies","QC","CPC",24
+"LPC +20",1000,2025-11-02,"Liaison Strategies","QC","NDP",7
+"LPC +20",1000,2025-11-02,"Liaison Strategies","QC","GPC",NA
+"LPC +20",1000,2025-11-02,"Liaison Strategies","QC","BQ",22
+"LPC +12",1126,2025-11-02,"EKOS","QC","LPC",39
+"LPC +12",1126,2025-11-02,"EKOS","QC","CPC",27
+"LPC +12",1126,2025-11-02,"EKOS","QC","NDP",2
+"LPC +12",1126,2025-11-02,"EKOS","QC","GPC",NA
+"LPC +12",1126,2025-11-02,"EKOS","QC","BQ",26
+"LPC +8",1585,2025-11-01,"Léger","QC","LPC",40
+"LPC +8",1585,2025-11-01,"Léger","QC","CPC",20
+"LPC +8",1585,2025-11-01,"Léger","QC","NDP",4
+"LPC +8",1585,2025-11-01,"Léger","QC","GPC",NA
+"LPC +8",1585,2025-11-01,"Léger","QC","BQ",32
+"LPC +13",2922,2025-10-27,"Abacus Data","QC","LPC",40
+"LPC +13",2922,2025-10-27,"Abacus Data","QC","CPC",25
+"LPC +13",2922,2025-10-27,"Abacus Data","QC","NDP",2
+"LPC +13",2922,2025-10-27,"Abacus Data","QC","GPC",NA
+"LPC +13",2922,2025-10-27,"Abacus Data","QC","BQ",27
+"LPC +12",1199,2025-10-23,"EKOS","QC","LPC",38
+"LPC +12",1199,2025-10-23,"EKOS","QC","CPC",24
+"LPC +12",1199,2025-10-23,"EKOS","QC","NDP",9
+"LPC +12",1199,2025-10-23,"EKOS","QC","GPC",NA
+"LPC +12",1199,2025-10-23,"EKOS","QC","BQ",26
+"LPC +10",4106,2025-10-17,"Innovative Research","QC","LPC",40
+"LPC +10",4106,2025-10-17,"Innovative Research","QC","CPC",22
+"LPC +10",4106,2025-10-17,"Innovative Research","QC","NDP",4
+"LPC +10",4106,2025-10-17,"Innovative Research","QC","GPC",NA
+"LPC +10",4106,2025-10-17,"Innovative Research","QC","BQ",30
+"LPC +14",1206,2025-10-14,"Pallas Data","QC","LPC",40
+"LPC +14",1206,2025-10-14,"Pallas Data","QC","CPC",23
+"LPC +14",1206,2025-10-14,"Pallas Data","QC","NDP",6
+"LPC +14",1206,2025-10-14,"Pallas Data","QC","GPC",NA
+"LPC +14",1206,2025-10-14,"Pallas Data","QC","BQ",26
 "LPC +3",4501,2025-10-12,"Abacus Data","QC","LPC",36
 "LPC +3",4501,2025-10-12,"Abacus Data","QC","CPC",23
 "LPC +3",4501,2025-10-12,"Abacus Data","QC","NDP",4
@@ -619,6 +769,51 @@
 "LPC +15",1502,2025-04-30,"Léger","QC","NDP",5
 "LPC +15",1502,2025-04-30,"Léger","QC","GPC",NA
 "LPC +15",1502,2025-04-30,"Léger","QC","BQ",28
+"LPC +14",1000,2025-11-08,"Liaison Strategies","ON","LPC",49
+"LPC +14",1000,2025-11-08,"Liaison Strategies","ON","CPC",35
+"LPC +14",1000,2025-11-08,"Liaison Strategies","ON","NDP",10
+"LPC +14",1000,2025-11-08,"Liaison Strategies","ON","GPC",3
+"LPC +14",1000,2025-11-08,"Liaison Strategies","ON","BQ",NA
+"LPC +1",1916,2025-11-06,"Abacus Data","ON","LPC",44
+"LPC +1",1916,2025-11-06,"Abacus Data","ON","CPC",43
+"LPC +1",1916,2025-11-06,"Abacus Data","ON","NDP",8
+"LPC +1",1916,2025-11-06,"Abacus Data","ON","GPC",3
+"LPC +1",1916,2025-11-06,"Abacus Data","ON","BQ",NA
+"LPC +5",1000,2025-11-02,"Liaison Strategies","ON","LPC",43
+"LPC +5",1000,2025-11-02,"Liaison Strategies","ON","CPC",38
+"LPC +5",1000,2025-11-02,"Liaison Strategies","ON","NDP",12
+"LPC +5",1000,2025-11-02,"Liaison Strategies","ON","GPC",3
+"LPC +5",1000,2025-11-02,"Liaison Strategies","ON","BQ",NA
+"LPC +8",1126,2025-11-02,"EKOS","ON","LPC",46
+"LPC +8",1126,2025-11-02,"EKOS","ON","CPC",38
+"LPC +8",1126,2025-11-02,"EKOS","ON","NDP",10
+"LPC +8",1126,2025-11-02,"EKOS","ON","GPC",3
+"LPC +8",1126,2025-11-02,"EKOS","ON","BQ",NA
+"LPC +6",1585,2025-11-01,"Léger","ON","LPC",48
+"LPC +6",1585,2025-11-01,"Léger","ON","CPC",42
+"LPC +6",1585,2025-11-01,"Léger","ON","NDP",6
+"LPC +6",1585,2025-11-01,"Léger","ON","GPC",3
+"LPC +6",1585,2025-11-01,"Léger","ON","BQ",NA
+"Tie",2922,2025-10-27,"Abacus Data","ON","LPC",44
+"Tie",2922,2025-10-27,"Abacus Data","ON","CPC",44
+"Tie",2922,2025-10-27,"Abacus Data","ON","NDP",8
+"Tie",2922,2025-10-27,"Abacus Data","ON","GPC",3
+"Tie",2922,2025-10-27,"Abacus Data","ON","BQ",NA
+"LPC +16",1199,2025-10-23,"EKOS","ON","LPC",49
+"LPC +16",1199,2025-10-23,"EKOS","ON","CPC",33
+"LPC +16",1199,2025-10-23,"EKOS","ON","NDP",12
+"LPC +16",1199,2025-10-23,"EKOS","ON","GPC",3
+"LPC +16",1199,2025-10-23,"EKOS","ON","BQ",NA
+"Tie",4106,2025-10-17,"Innovative Research","ON","LPC",43
+"Tie",4106,2025-10-17,"Innovative Research","ON","CPC",43
+"Tie",4106,2025-10-17,"Innovative Research","ON","NDP",9
+"Tie",4106,2025-10-17,"Innovative Research","ON","GPC",4
+"Tie",4106,2025-10-17,"Innovative Research","ON","BQ",NA
+"LPC +7",1206,2025-10-14,"Pallas Data","ON","LPC",45
+"LPC +7",1206,2025-10-14,"Pallas Data","ON","CPC",38
+"LPC +7",1206,2025-10-14,"Pallas Data","ON","NDP",11
+"LPC +7",1206,2025-10-14,"Pallas Data","ON","GPC",4
+"LPC +7",1206,2025-10-14,"Pallas Data","ON","BQ",NA
 "LPC +1",4501,2025-10-12,"Abacus Data","ON","LPC",44
 "LPC +1",4501,2025-10-12,"Abacus Data","ON","CPC",43
 "LPC +1",4501,2025-10-12,"Abacus Data","ON","NDP",8
@@ -784,6 +979,51 @@
 "LPC +5",1502,2025-04-30,"Léger","ON","NDP",5
 "LPC +5",1502,2025-04-30,"Léger","ON","GPC",1
 "LPC +5",1502,2025-04-30,"Léger","ON","BQ",NA
+"CPC +20",1000,2025-11-08,"Liaison Strategies","MB/SK","LPC",32
+"CPC +20",1000,2025-11-08,"Liaison Strategies","MB/SK","CPC",52
+"CPC +20",1000,2025-11-08,"Liaison Strategies","MB/SK","NDP",11
+"CPC +20",1000,2025-11-08,"Liaison Strategies","MB/SK","GPC",2
+"CPC +20",1000,2025-11-08,"Liaison Strategies","MB/SK","BQ",NA
+"CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","LPC",33
+"CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","CPC",54
+"CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","NDP",10
+"CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","GPC",2
+"CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","BQ",NA
+"CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","LPC",29
+"CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","CPC",53
+"CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","NDP",14
+"CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","GPC",0
+"CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","BQ",NA
+"LPC +10",1126,2025-11-02,"EKOS","MB/SK","LPC",43
+"LPC +10",1126,2025-11-02,"EKOS","MB/SK","CPC",33
+"LPC +10",1126,2025-11-02,"EKOS","MB/SK","NDP",17
+"LPC +10",1126,2025-11-02,"EKOS","MB/SK","GPC",6
+"LPC +10",1126,2025-11-02,"EKOS","MB/SK","BQ",NA
+"CPC +13",1585,2025-11-01,"Léger","MB/SK","LPC",35
+"CPC +13",1585,2025-11-01,"Léger","MB/SK","CPC",48
+"CPC +13",1585,2025-11-01,"Léger","MB/SK","NDP",9
+"CPC +13",1585,2025-11-01,"Léger","MB/SK","GPC",3
+"CPC +13",1585,2025-11-01,"Léger","MB/SK","BQ",NA
+"CPC +23",2922,2025-10-27,"Abacus Data","MB/SK","LPC",31
+"CPC +23",2922,2025-10-27,"Abacus Data","MB/SK","CPC",54
+"CPC +23",2922,2025-10-27,"Abacus Data","MB/SK","NDP",9
+"CPC +23",2922,2025-10-27,"Abacus Data","MB/SK","GPC",3
+"CPC +23",2922,2025-10-27,"Abacus Data","MB/SK","BQ",NA
+"CPC +4",1199,2025-10-23,"EKOS","MB/SK","LPC",35
+"CPC +4",1199,2025-10-23,"EKOS","MB/SK","CPC",39
+"CPC +4",1199,2025-10-23,"EKOS","MB/SK","NDP",17
+"CPC +4",1199,2025-10-23,"EKOS","MB/SK","GPC",1
+"CPC +4",1199,2025-10-23,"EKOS","MB/SK","BQ",NA
+"CPC +20",4106,2025-10-17,"Innovative Research","MB/SK","LPC",31
+"CPC +20",4106,2025-10-17,"Innovative Research","MB/SK","CPC",51
+"CPC +20",4106,2025-10-17,"Innovative Research","MB/SK","NDP",14
+"CPC +20",4106,2025-10-17,"Innovative Research","MB/SK","GPC",2
+"CPC +20",4106,2025-10-17,"Innovative Research","MB/SK","BQ",NA
+"CPC +16",1206,2025-10-14,"Pallas Data","MB/SK","LPC",32
+"CPC +16",1206,2025-10-14,"Pallas Data","MB/SK","CPC",48
+"CPC +16",1206,2025-10-14,"Pallas Data","MB/SK","NDP",15
+"CPC +16",1206,2025-10-14,"Pallas Data","MB/SK","GPC",1
+"CPC +16",1206,2025-10-14,"Pallas Data","MB/SK","BQ",NA
 "CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","LPC",34
 "CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","CPC",51
 "CPC +17",4501,2025-10-12,"Abacus Data","MB/SK","NDP",12
@@ -939,6 +1179,41 @@
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","NDP",10
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","GPC",0
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","BQ",NA
+"CPC +20",1585,2025-11-01,"Léger","AB","LPC",34
+"CPC +20",1585,2025-11-01,"Léger","AB","CPC",54
+"CPC +20",1585,2025-11-01,"Léger","AB","NDP",8
+"CPC +20",1585,2025-11-01,"Léger","AB","GPC",2
+"CPC +20",1585,2025-11-01,"Léger","AB","BQ",NA
+"CPC +32",1000,2025-11-02,"Liaison Strategies","AB","LPC",28
+"CPC +32",1000,2025-11-02,"Liaison Strategies","AB","CPC",60
+"CPC +32",1000,2025-11-02,"Liaison Strategies","AB","NDP",10
+"CPC +32",1000,2025-11-02,"Liaison Strategies","AB","GPC",1
+"CPC +32",1000,2025-11-02,"Liaison Strategies","AB","BQ",NA
+"CPC +14",1126,2025-11-02,"EKOS","AB","LPC",37
+"CPC +14",1126,2025-11-02,"EKOS","AB","CPC",51
+"CPC +14",1126,2025-11-02,"EKOS","AB","NDP",9
+"CPC +14",1126,2025-11-02,"EKOS","AB","GPC",1
+"CPC +14",1126,2025-11-02,"EKOS","AB","BQ",NA
+"CPC +37",2922,2025-10-27,"Abacus Data","AB","LPC",25
+"CPC +37",2922,2025-10-27,"Abacus Data","AB","CPC",62
+"CPC +37",2922,2025-10-27,"Abacus Data","AB","NDP",12
+"CPC +37",2922,2025-10-27,"Abacus Data","AB","GPC",0
+"CPC +37",2922,2025-10-27,"Abacus Data","AB","BQ",NA
+"CPC +20",1199,2025-10-23,"EKOS","AB","LPC",30
+"CPC +20",1199,2025-10-23,"EKOS","AB","CPC",50
+"CPC +20",1199,2025-10-23,"EKOS","AB","NDP",12
+"CPC +20",1199,2025-10-23,"EKOS","AB","GPC",0
+"CPC +20",1199,2025-10-23,"EKOS","AB","BQ",NA
+"CPC +22",4106,2025-10-17,"Innovative Research","AB","LPC",33
+"CPC +22",4106,2025-10-17,"Innovative Research","AB","CPC",55
+"CPC +22",4106,2025-10-17,"Innovative Research","AB","NDP",8
+"CPC +22",4106,2025-10-17,"Innovative Research","AB","GPC",0
+"CPC +22",4106,2025-10-17,"Innovative Research","AB","BQ",NA
+"CPC +33",1206,2025-10-14,"Pallas Data","AB","LPC",23
+"CPC +33",1206,2025-10-14,"Pallas Data","AB","CPC",56
+"CPC +33",1206,2025-10-14,"Pallas Data","AB","NDP",14
+"CPC +33",1206,2025-10-14,"Pallas Data","AB","GPC",0
+"CPC +33",1206,2025-10-14,"Pallas Data","AB","BQ",NA
 "CPC +34",4501,2025-10-12,"Abacus Data","AB","LPC",27
 "CPC +34",4501,2025-10-12,"Abacus Data","AB","CPC",61
 "CPC +34",4501,2025-10-12,"Abacus Data","AB","NDP",9
@@ -1094,6 +1369,51 @@
 "CPC +36",1502,2025-04-30,"Léger","AB","NDP",6
 "CPC +36",1502,2025-04-30,"Léger","AB","GPC",2
 "CPC +36",1502,2025-04-30,"Léger","AB","BQ",NA
+"LPC +10",1000,2025-11-08,"Liaison Strategies","BC","LPC",46
+"LPC +10",1000,2025-11-08,"Liaison Strategies","BC","CPC",36
+"LPC +10",1000,2025-11-08,"Liaison Strategies","BC","NDP",13
+"LPC +10",1000,2025-11-08,"Liaison Strategies","BC","GPC",2
+"LPC +10",1000,2025-11-08,"Liaison Strategies","BC","BQ",NA
+"Tie",1916,2025-11-06,"Abacus Data","BC","LPC",42
+"Tie",1916,2025-11-06,"Abacus Data","BC","CPC",42
+"Tie",1916,2025-11-06,"Abacus Data","BC","NDP",11
+"Tie",1916,2025-11-06,"Abacus Data","BC","GPC",4
+"Tie",1916,2025-11-06,"Abacus Data","BC","BQ",NA
+"LPC +5",1000,2025-11-02,"Liaison Strategies","BC","LPC",43
+"LPC +5",1000,2025-11-02,"Liaison Strategies","BC","CPC",38
+"LPC +5",1000,2025-11-02,"Liaison Strategies","BC","NDP",15
+"LPC +5",1000,2025-11-02,"Liaison Strategies","BC","GPC",1
+"LPC +5",1000,2025-11-02,"Liaison Strategies","BC","BQ",NA
+"LPC +14",1126,2025-11-02,"EKOS","BC","LPC",47
+"LPC +14",1126,2025-11-02,"EKOS","BC","CPC",33
+"LPC +14",1126,2025-11-02,"EKOS","BC","NDP",6
+"LPC +14",1126,2025-11-02,"EKOS","BC","GPC",12
+"LPC +14",1126,2025-11-02,"EKOS","BC","BQ",NA
+"LPC +6",1585,2025-11-01,"Léger","BC","LPC",44
+"LPC +6",1585,2025-11-01,"Léger","BC","CPC",38
+"LPC +6",1585,2025-11-01,"Léger","BC","NDP",11
+"LPC +6",1585,2025-11-01,"Léger","BC","GPC",7
+"LPC +6",1585,2025-11-01,"Léger","BC","BQ",NA
+"CPC +1",2922,2025-10-27,"Abacus Data","BC","LPC",40
+"CPC +1",2922,2025-10-27,"Abacus Data","BC","CPC",41
+"CPC +1",2922,2025-10-27,"Abacus Data","BC","NDP",13
+"CPC +1",2922,2025-10-27,"Abacus Data","BC","GPC",4
+"CPC +1",2922,2025-10-27,"Abacus Data","BC","BQ",NA
+"LPC +10",1199,2025-10-23,"EKOS","BC","LPC",44
+"LPC +10",1199,2025-10-23,"EKOS","BC","CPC",34
+"LPC +10",1199,2025-10-23,"EKOS","BC","NDP",15
+"LPC +10",1199,2025-10-23,"EKOS","BC","GPC",5
+"LPC +10",1199,2025-10-23,"EKOS","BC","BQ",NA
+"CPC +5",4106,2025-10-17,"Innovative Research","BC","LPC",37
+"CPC +5",4106,2025-10-17,"Innovative Research","BC","CPC",42
+"CPC +5",4106,2025-10-17,"Innovative Research","BC","NDP",15
+"CPC +5",4106,2025-10-17,"Innovative Research","BC","GPC",5
+"CPC +5",4106,2025-10-17,"Innovative Research","BC","BQ",NA
+"LPC +8",1206,2025-10-14,"Pallas Data","BC","LPC",46
+"LPC +8",1206,2025-10-14,"Pallas Data","BC","CPC",38
+"LPC +8",1206,2025-10-14,"Pallas Data","BC","NDP",15
+"LPC +8",1206,2025-10-14,"Pallas Data","BC","GPC",0
+"LPC +8",1206,2025-10-14,"Pallas Data","BC","BQ",NA
 "CPC +2",4501,2025-10-12,"Abacus Data","BC","LPC",40
 "CPC +2",4501,2025-10-12,"Abacus Data","BC","CPC",42
 "CPC +2",4501,2025-10-12,"Abacus Data","BC","NDP",12
