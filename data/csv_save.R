@@ -168,7 +168,7 @@ dat_343_prov[[2]] <- dat_343_prov[[2]][-10,]
 
 pattern <- "(?i)n\\s*=\\s*([0-9,]+)"
 
-for (i in c(2,7:8)) {
+for (i in c(1:2,6:8)) {
   sample_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]") %>%  # adjust XPath if needed
     html_text(trim = TRUE)
@@ -185,7 +185,7 @@ for (i in c(2,7:8)) {
 
 
 
-for (i in c(2,7:8)) {
+for (i in c(1:2,6:8)) {
   # extract the first text node (dates)
   date_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]/text()[1]") %>%
@@ -197,7 +197,7 @@ for (i in c(2,7:8)) {
   dat_343_prov[[i]]$date <- poll_dates
 }
 
-for (i in c(2,7:8)) {
+for (i in c(1:2,6:8)) {
   # polling firm is in div/div[1]
   firm_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[1]") %>%
@@ -209,6 +209,8 @@ for (i in c(2,7:8)) {
 ON_parties <- c("PCPO","ONDP","OLP","GPO")
 QC_parties <- c("CAQ","PLQ","QS","PQ","PCQ")
 BC_parties <- c("NDP(BC)", "CPBC", "BCG")
+AB_parties <- c("UCP", "NDP(AB)","LIB(AB)","GPA","REP","ABP")
+NS_parties <- c("LIB(NS)","PC(NS)","NDP(NS)","NSG")
 
 
 blank_idx <- which(colnames(dat_343_prov[[2]]) == "")
@@ -219,6 +221,12 @@ colnames(dat_343_prov[[7]])[blank_idx] <- ON_parties[seq_along(blank_idx)]
 
 blank_idx <- which(colnames(dat_343_prov[[8]]) == "")
 colnames(dat_343_prov[[8]])[blank_idx] <- QC_parties[seq_along(blank_idx)]
+
+blank_idx <- which(colnames(dat_343_prov[[1]]) == "")
+colnames(dat_343_prov[[1]])[blank_idx] <- AB_parties[seq_along(blank_idx)]
+
+blank_idx <- which(colnames(dat_343_prov[[6]]) == "")
+colnames(dat_343_prov[[6]])[blank_idx] <- NS_parties[seq_along(blank_idx)]
 
 
 for (i in 1:9) {
@@ -232,19 +240,25 @@ province <- c("AB","BC","MB","NB","NL","NS","ON","QC","SK","PEI")
 election_dates_vec <- c(as.Date("2023-05-29"), as.Date("2024-10-19"),as.Date("2023-10-03"), as.Date("2024-10-21"),as.Date("2021-03-25"),
                         as.Date("2024-11-26"),as.Date("2022-06-02"),as.Date("2022-09-03"),as.Date("2024-10-28"),as.Date("2023-04-03"))
 
-for (i in c(1,3:6,9)) {
+for (i in c(3:5,9)) {
   dat_343_prov[[i]] <- dat_343_prov[[i]] %>%
     rename(firm = Firm, date = `Date(middle)`, sample = Sample)
 }
 
 dat_343_prov[[2]] <- dat_343_prov[[2]] %>%
-  select(c(-`British Columbia polls`, -CNBC, -ONE))
+  select(c(-`British Columbia polls`, -CEN, -ONE))
 
 dat_343_prov[[7]] <- dat_343_prov[[7]] %>%
   select(-`Ontario polls`)
 
 dat_343_prov[[8]] <- dat_343_prov[[8]] %>%
   select(-`Quebec polls`)
+
+dat_343_prov[[1]] <- dat_343_prov[[1]] %>%
+  select(-`Alberta polls`)
+
+dat_343_prov[[6]] <- dat_343_prov[[6]] %>%
+  select(-`Nova Scotia polls`)
 
 
 for (i in 1:9) {
@@ -875,9 +889,9 @@ pei_wiki_page <- read_html(link_pei)
 
 
 pei_wiki_page <-  pei_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[6]") %>%
+  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[4]") %>%
   html_table()
-
+#/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[4]
 pei_results <- pei_wiki_page[[1]]
 colnames(pei_results) <- pei_results[1,]
 pei_results <- pei_results[c(-1:-3,-12,-19,-26),]
