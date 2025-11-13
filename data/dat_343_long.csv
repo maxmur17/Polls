@@ -1179,11 +1179,16 @@
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","NDP",10
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","GPC",0
 "CPC +21",1502,2025-04-30,"Léger","MB/SK","BQ",NA
-"CPC +20",1585,2025-11-01,"Léger","AB","LPC",34
-"CPC +20",1585,2025-11-01,"Léger","AB","CPC",54
-"CPC +20",1585,2025-11-01,"Léger","AB","NDP",8
-"CPC +20",1585,2025-11-01,"Léger","AB","GPC",2
-"CPC +20",1585,2025-11-01,"Léger","AB","BQ",NA
+"CPC +24",1000,2025-11-08,"Liaison Strategies","AB","LPC",31
+"CPC +24",1000,2025-11-08,"Liaison Strategies","AB","CPC",55
+"CPC +24",1000,2025-11-08,"Liaison Strategies","AB","NDP",9
+"CPC +24",1000,2025-11-08,"Liaison Strategies","AB","GPC",0
+"CPC +24",1000,2025-11-08,"Liaison Strategies","AB","BQ",NA
+"CPC +35",1916,2025-11-06,"Abacus Data","AB","LPC",26
+"CPC +35",1916,2025-11-06,"Abacus Data","AB","CPC",61
+"CPC +35",1916,2025-11-06,"Abacus Data","AB","NDP",11
+"CPC +35",1916,2025-11-06,"Abacus Data","AB","GPC",0
+"CPC +35",1916,2025-11-06,"Abacus Data","AB","BQ",NA
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","LPC",28
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","CPC",60
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","NDP",10
@@ -1194,6 +1199,11 @@
 "CPC +14",1126,2025-11-02,"EKOS","AB","NDP",9
 "CPC +14",1126,2025-11-02,"EKOS","AB","GPC",1
 "CPC +14",1126,2025-11-02,"EKOS","AB","BQ",NA
+"CPC +20",1585,2025-11-01,"Léger","AB","LPC",34
+"CPC +20",1585,2025-11-01,"Léger","AB","CPC",54
+"CPC +20",1585,2025-11-01,"Léger","AB","NDP",8
+"CPC +20",1585,2025-11-01,"Léger","AB","GPC",2
+"CPC +20",1585,2025-11-01,"Léger","AB","BQ",NA
 "CPC +37",2922,2025-10-27,"Abacus Data","AB","LPC",25
 "CPC +37",2922,2025-10-27,"Abacus Data","AB","CPC",62
 "CPC +37",2922,2025-10-27,"Abacus Data","AB","NDP",12
