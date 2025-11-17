@@ -168,7 +168,7 @@ dat_343_prov[[2]] <- dat_343_prov[[2]][-10,]
 
 pattern <- "(?i)n\\s*=\\s*([0-9,]+)"
 
-for (i in c(1:2,6:8)) {
+for (i in c(1:3,6:8)) {
   sample_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]") %>%  # adjust XPath if needed
     html_text(trim = TRUE)
@@ -185,7 +185,7 @@ for (i in c(1:2,6:8)) {
 
 
 
-for (i in c(1:2,6:8)) {
+for (i in c(1:3,6:8)) {
   # extract the first text node (dates)
   date_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[2]/text()[1]") %>%
@@ -197,7 +197,7 @@ for (i in c(1:2,6:8)) {
   dat_343_prov[[i]]$date <- poll_dates
 }
 
-for (i in c(1:2,6:8)) {
+for (i in c(1:3,6:8)) {
   # polling firm is in div/div[1]
   firm_nodes <- C338_pages_prov[[i]] %>%
     html_elements(xpath = "//table//tr/td[1]/div/div[1]") %>%
@@ -211,6 +211,7 @@ QC_parties <- c("CAQ","PLQ","QS","PQ","PCQ")
 BC_parties <- c("NDP(BC)", "CPBC", "BCG")
 AB_parties <- c("UCP", "NDP(AB)","LIB(AB)","GPA","REP","ABP")
 NS_parties <- c("LIB(NS)","PC(NS)","NDP(NS)","NSG")
+MB_parties <- c("LIB(MB)", "MBG", "NDP(MB)", "PC(MB)")
 
 
 blank_idx <- which(colnames(dat_343_prov[[2]]) == "")
@@ -228,6 +229,8 @@ colnames(dat_343_prov[[1]])[blank_idx] <- AB_parties[seq_along(blank_idx)]
 blank_idx <- which(colnames(dat_343_prov[[6]]) == "")
 colnames(dat_343_prov[[6]])[blank_idx] <- NS_parties[seq_along(blank_idx)]
 
+blank_idx <- which(colnames(dat_343_prov[[3]]) == "")
+colnames(dat_343_prov[[3]])[blank_idx] <- MB_parties[seq_along(blank_idx)]
 
 for (i in 1:9) {
   dat_343_prov[[i]] <- dat_343_prov[[i]] %>%
@@ -240,7 +243,7 @@ province <- c("AB","BC","MB","NB","NL","NS","ON","QC","SK","PEI")
 election_dates_vec <- c(as.Date("2023-05-29"), as.Date("2024-10-19"),as.Date("2023-10-03"), as.Date("2024-10-21"),as.Date("2021-03-25"),
                         as.Date("2024-11-26"),as.Date("2022-06-02"),as.Date("2022-09-03"),as.Date("2024-10-28"),as.Date("2023-04-03"))
 
-for (i in c(3:5,9)) {
+for (i in c(4:5,9)) {
   dat_343_prov[[i]] <- dat_343_prov[[i]] %>%
     rename(firm = Firm, date = `Date(middle)`, sample = Sample)
 }
@@ -259,6 +262,9 @@ dat_343_prov[[1]] <- dat_343_prov[[1]] %>%
 
 dat_343_prov[[6]] <- dat_343_prov[[6]] %>%
   select(-`Nova Scotia polls`)
+
+dat_343_prov[[3]] <- dat_343_prov[[3]] %>%
+  select(-`Manitoba polls`)
 
 
 for (i in 1:9) {
@@ -466,7 +472,7 @@ pei_wiki_page <- read_html(link_pei)
 
 
 pei_wiki_page <-  pei_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[3]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[3]") %>%
   html_table()
 
 pei_polls <- pei_wiki_page[[1]]
@@ -586,7 +592,7 @@ bc_wiki_page <- read_html(link_bc)
 
 
 bc_wiki_page <-  bc_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[24]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[24]") %>%
   html_table()
 
 bc_results <- bc_wiki_page[[1]]
@@ -724,7 +730,7 @@ nb_wiki_page <- read_html(link_nb)
 
 
 nb_wiki_page <-  nb_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[16]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[16]") %>%
   html_table()
 
 nb_results <- nb_wiki_page[[1]]
@@ -756,7 +762,7 @@ link_nl <- "https://en.wikipedia.org/wiki/2021_Newfoundland_and_Labrador_general
 nl_wiki_page <- read_html(link_nl)
 
 nl_wiki_page <-  nl_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[3]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[3]") %>%
   html_table()
 
 nl_results <- nl_wiki_page[[1]]
@@ -786,7 +792,7 @@ nl_results <- nl_results %>%
 link_ns <- "https://en.wikipedia.org/wiki/2024_Nova_Scotia_general_election"
 ns_wiki_page <- read_html(link_ns)
 ns_wiki_page <- ns_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[8]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[8]") %>%
   html_table()
 
 ns_results <- ns_wiki_page[[1]]
@@ -832,7 +838,7 @@ on_results <- on_results %>%
 link_qc <- "https://en.wikipedia.org/wiki/2022_Quebec_general_election"
 qc_wiki_page <- read_html(link_qc)
 qc_wiki_page <- qc_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[15]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[15]") %>%
   html_table()
 
 qc_results <- qc_wiki_page[[1]]
@@ -861,7 +867,7 @@ link_sk <- "https://en.wikipedia.org/wiki/2024_Saskatchewan_general_election"
 
 sk_wiki_page <- read_html(link_sk)
 sk_wiki_page <- sk_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[20]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[20]") %>%
   html_table()
 sk_results <- sk_wiki_page[[1]]
 colnames(sk_results) <- sk_results[1,]
@@ -889,9 +895,9 @@ pei_wiki_page <- read_html(link_pei)
 
 
 pei_wiki_page <-  pei_wiki_page %>%
-  html_elements(xpath = "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[4]") %>%
+  html_elements(xpath = "/html/body/div[3]/div/div[3]/main/div[3]/div[3]/div[1]/table[4]") %>%
   html_table()
-#/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[4]
+
 pei_results <- pei_wiki_page[[1]]
 colnames(pei_results) <- pei_results[1,]
 pei_results <- pei_results[c(-1:-3,-12,-19,-26),]
