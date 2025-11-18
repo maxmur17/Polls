@@ -1,19 +1,29 @@
 "Leader","sample","date","firm","region","party","pop_sup"
-"LPC +3",1122,2025-11-07,"Nanos Research","National","LPC",40
-"LPC +3",1122,2025-11-07,"Nanos Research","National","CPC",37
-"LPC +3",1122,2025-11-07,"Nanos Research","National","NDP",11
-"LPC +3",1122,2025-11-07,"Nanos Research","National","GPC",2
-"LPC +3",1122,2025-11-07,"Nanos Research","National","BQ",8
+"LPC +4",1084,2025-11-08,"Mainstreet Research","National","LPC",44
+"LPC +4",1084,2025-11-08,"Mainstreet Research","National","CPC",40
+"LPC +4",1084,2025-11-08,"Mainstreet Research","National","NDP",5
+"LPC +4",1084,2025-11-08,"Mainstreet Research","National","GPC",2
+"LPC +4",1084,2025-11-08,"Mainstreet Research","National","BQ",6
 "LPC +8",1000,2025-11-08,"Liaison Strategies","National","LPC",44
 "LPC +8",1000,2025-11-08,"Liaison Strategies","National","CPC",36
 "LPC +8",1000,2025-11-08,"Liaison Strategies","National","NDP",10
 "LPC +8",1000,2025-11-08,"Liaison Strategies","National","GPC",2
 "LPC +8",1000,2025-11-08,"Liaison Strategies","National","BQ",6
+"LPC +3",1122,2025-11-07,"Nanos Research","National","LPC",40
+"LPC +3",1122,2025-11-07,"Nanos Research","National","CPC",37
+"LPC +3",1122,2025-11-07,"Nanos Research","National","NDP",11
+"LPC +3",1122,2025-11-07,"Nanos Research","National","GPC",2
+"LPC +3",1122,2025-11-07,"Nanos Research","National","BQ",8
 "CPC +1",1916,2025-11-06,"Abacus Data","National","LPC",40
 "CPC +1",1916,2025-11-06,"Abacus Data","National","CPC",41
 "CPC +1",1916,2025-11-06,"Abacus Data","National","NDP",8
 "CPC +1",1916,2025-11-06,"Abacus Data","National","GPC",2
 "CPC +1",1916,2025-11-06,"Abacus Data","National","BQ",7
+"LPC +2",2038,2025-11-06,"Angus Reid Institute","National","LPC",40
+"LPC +2",2038,2025-11-06,"Angus Reid Institute","National","CPC",38
+"LPC +2",2038,2025-11-06,"Angus Reid Institute","National","NDP",9
+"LPC +2",2038,2025-11-06,"Angus Reid Institute","National","GPC",3
+"LPC +2",2038,2025-11-06,"Angus Reid Institute","National","BQ",8
 "LPC +4",1000,2025-11-02,"Liaison Strategies","National","LPC",42
 "LPC +4",1000,2025-11-02,"Liaison Strategies","National","CPC",38
 "LPC +4",1000,2025-11-02,"Liaison Strategies","National","NDP",11
@@ -364,6 +374,11 @@
 "LPC +8",1916,2025-11-06,"Abacus Data","ATL","NDP",8
 "LPC +8",1916,2025-11-06,"Abacus Data","ATL","GPC",1
 "LPC +8",1916,2025-11-06,"Abacus Data","ATL","BQ",NA
+"LPC +12",2038,2025-11-06,"Angus Reid Institute","ATL","LPC",50
+"LPC +12",2038,2025-11-06,"Angus Reid Institute","ATL","CPC",38
+"LPC +12",2038,2025-11-06,"Angus Reid Institute","ATL","NDP",7
+"LPC +12",2038,2025-11-06,"Angus Reid Institute","ATL","GPC",3
+"LPC +12",2038,2025-11-06,"Angus Reid Institute","ATL","BQ",NA
 "LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","LPC",53
 "LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","CPC",31
 "LPC +22",1000,2025-11-02,"Liaison Strategies","ATL","NDP",10
@@ -554,6 +569,11 @@
 "LPC +17",1502,2025-04-30,"Léger","ATL","NDP",4
 "LPC +17",1502,2025-04-30,"Léger","ATL","GPC",1
 "LPC +17",1502,2025-04-30,"Léger","ATL","BQ",NA
+"LPC +11",1031,2025-11-09,"Léger","QC","LPC",39
+"LPC +11",1031,2025-11-09,"Léger","QC","CPC",25
+"LPC +11",1031,2025-11-09,"Léger","QC","NDP",5
+"LPC +11",1031,2025-11-09,"Léger","QC","GPC",NA
+"LPC +11",1031,2025-11-09,"Léger","QC","BQ",28
 "LPC +17",1000,2025-11-08,"Liaison Strategies","QC","LPC",42
 "LPC +17",1000,2025-11-08,"Liaison Strategies","QC","CPC",25
 "LPC +17",1000,2025-11-08,"Liaison Strategies","QC","NDP",8
@@ -564,6 +584,11 @@
 "LPC +9",1916,2025-11-06,"Abacus Data","QC","NDP",5
 "LPC +9",1916,2025-11-06,"Abacus Data","QC","GPC",NA
 "LPC +9",1916,2025-11-06,"Abacus Data","QC","BQ",30
+"Tie",2038,2025-11-06,"Angus Reid Institute","QC","LPC",36
+"Tie",2038,2025-11-06,"Angus Reid Institute","QC","CPC",19
+"Tie",2038,2025-11-06,"Angus Reid Institute","QC","NDP",6
+"Tie",2038,2025-11-06,"Angus Reid Institute","QC","GPC",NA
+"Tie",2038,2025-11-06,"Angus Reid Institute","QC","BQ",36
 "LPC +20",1000,2025-11-02,"Liaison Strategies","QC","LPC",44
 "LPC +20",1000,2025-11-02,"Liaison Strategies","QC","CPC",24
 "LPC +20",1000,2025-11-02,"Liaison Strategies","QC","NDP",7
@@ -779,6 +804,11 @@
 "LPC +1",1916,2025-11-06,"Abacus Data","ON","NDP",8
 "LPC +1",1916,2025-11-06,"Abacus Data","ON","GPC",3
 "LPC +1",1916,2025-11-06,"Abacus Data","ON","BQ",NA
+"LPC +7",2038,2025-11-06,"Angus Reid Institute","ON","LPC",46
+"LPC +7",2038,2025-11-06,"Angus Reid Institute","ON","CPC",39
+"LPC +7",2038,2025-11-06,"Angus Reid Institute","ON","NDP",9
+"LPC +7",2038,2025-11-06,"Angus Reid Institute","ON","GPC",4
+"LPC +7",2038,2025-11-06,"Angus Reid Institute","ON","BQ",NA
 "LPC +5",1000,2025-11-02,"Liaison Strategies","ON","LPC",43
 "LPC +5",1000,2025-11-02,"Liaison Strategies","ON","CPC",38
 "LPC +5",1000,2025-11-02,"Liaison Strategies","ON","NDP",12
@@ -989,6 +1019,11 @@
 "CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","NDP",10
 "CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","GPC",2
 "CPC +21",1916,2025-11-06,"Abacus Data","MB/SK","BQ",NA
+"CPC +25",2038,2025-11-06,"Angus Reid Institute","MB/SK","LPC",31
+"CPC +25",2038,2025-11-06,"Angus Reid Institute","MB/SK","CPC",56
+"CPC +25",2038,2025-11-06,"Angus Reid Institute","MB/SK","NDP",12
+"CPC +25",2038,2025-11-06,"Angus Reid Institute","MB/SK","GPC",1
+"CPC +25",2038,2025-11-06,"Angus Reid Institute","MB/SK","BQ",NA
 "CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","LPC",29
 "CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","CPC",53
 "CPC +24",1000,2025-11-02,"Liaison Strategies","MB/SK","NDP",14
@@ -1389,6 +1424,11 @@
 "Tie",1916,2025-11-06,"Abacus Data","BC","NDP",11
 "Tie",1916,2025-11-06,"Abacus Data","BC","GPC",4
 "Tie",1916,2025-11-06,"Abacus Data","BC","BQ",NA
+"CPC +2",2038,2025-11-06,"Angus Reid Institute","BC","LPC",38
+"CPC +2",2038,2025-11-06,"Angus Reid Institute","BC","CPC",40
+"CPC +2",2038,2025-11-06,"Angus Reid Institute","BC","NDP",17
+"CPC +2",2038,2025-11-06,"Angus Reid Institute","BC","GPC",3
+"CPC +2",2038,2025-11-06,"Angus Reid Institute","BC","BQ",NA
 "LPC +5",1000,2025-11-02,"Liaison Strategies","BC","LPC",43
 "LPC +5",1000,2025-11-02,"Liaison Strategies","BC","CPC",38
 "LPC +5",1000,2025-11-02,"Liaison Strategies","BC","NDP",15
