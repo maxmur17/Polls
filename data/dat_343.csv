@@ -1,4 +1,5 @@
 "LPC","CPC","NDP","GPC","BQ","Leader","sample","date","firm","region"
+40,38,10,2,7,"LPC +2",1060,2025-11-14,"Nanos Research","National"
 44,40,5,2,6,"LPC +4",1084,2025-11-08,"Mainstreet Research","National"
 44,36,10,2,6,"LPC +8",1000,2025-11-08,"Liaison Strategies","National"
 40,37,11,2,8,"LPC +3",1122,2025-11-07,"Nanos Research","National"
@@ -244,6 +245,7 @@
 35,56,10,0,NA,"CPC +21",1502,2025-04-30,"Léger","MB/SK"
 31,55,9,0,NA,"CPC +24",1000,2025-11-08,"Liaison Strategies","AB"
 26,61,11,0,NA,"CPC +35",1916,2025-11-06,"Abacus Data","AB"
+30,59,9,1,NA,"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB"
 28,60,10,1,NA,"CPC +32",1000,2025-11-02,"Liaison Strategies","AB"
 37,51,9,1,NA,"CPC +14",1126,2025-11-02,"EKOS","AB"
 34,54,8,2,NA,"CPC +20",1585,2025-11-01,"Léger","AB"

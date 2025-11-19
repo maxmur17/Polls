@@ -1,4 +1,9 @@
 "Leader","sample","date","firm","region","party","pop_sup"
+"LPC +2",1060,2025-11-14,"Nanos Research","National","LPC",40
+"LPC +2",1060,2025-11-14,"Nanos Research","National","CPC",38
+"LPC +2",1060,2025-11-14,"Nanos Research","National","NDP",10
+"LPC +2",1060,2025-11-14,"Nanos Research","National","GPC",2
+"LPC +2",1060,2025-11-14,"Nanos Research","National","BQ",7
 "LPC +4",1084,2025-11-08,"Mainstreet Research","National","LPC",44
 "LPC +4",1084,2025-11-08,"Mainstreet Research","National","CPC",40
 "LPC +4",1084,2025-11-08,"Mainstreet Research","National","NDP",5
@@ -1224,6 +1229,11 @@
 "CPC +35",1916,2025-11-06,"Abacus Data","AB","NDP",11
 "CPC +35",1916,2025-11-06,"Abacus Data","AB","GPC",0
 "CPC +35",1916,2025-11-06,"Abacus Data","AB","BQ",NA
+"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB","LPC",30
+"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB","CPC",59
+"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB","NDP",9
+"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB","GPC",1
+"CPC +29",2038,2025-11-06,"Angus Reid Institute","AB","BQ",NA
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","LPC",28
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","CPC",60
 "CPC +32",1000,2025-11-02,"Liaison Strategies","AB","NDP",10
